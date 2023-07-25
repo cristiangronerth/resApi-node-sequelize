@@ -11,6 +11,7 @@ export const getProjects  = async (req, res) => {
   }
 }
 
+
 export const getOneProject = async (req, res) => {
   try {
     const { id } = req.params
@@ -24,8 +25,8 @@ export const getOneProject = async (req, res) => {
   } catch (error) {
     return res.status(500).json({message: error.message})
   }
-
 }
+
 
 export const createProjects = async (req, res) => {
   const { name, priority, description } = req.body;
@@ -40,6 +41,7 @@ export const createProjects = async (req, res) => {
     return res.status(500).json({message: error.message})
   }
 }
+
 
 export const updateProject = async (req, res) => {
   try {
@@ -57,6 +59,7 @@ export const updateProject = async (req, res) => {
     return res.status(500).json({message: error.message})
   }
 }
+
 
 export const deleteProject = async (req, res) => {
   try {

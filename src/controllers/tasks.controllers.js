@@ -9,6 +9,7 @@ export const getTasks = async (req, res) => {
   }
 };
 
+
 export const createTasks = async (req, res) => {
   try {
     const { name, done, projectId } = req.body;
@@ -23,6 +24,7 @@ export const createTasks = async (req, res) => {
   }
 };
 
+
 export const getOneTask = async (req, res) => {
   const { id } = req.params
   try {
@@ -35,6 +37,7 @@ export const getOneTask = async (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 }; 
+
 
 export const updateTasks = async (req, res) => {
   try {
