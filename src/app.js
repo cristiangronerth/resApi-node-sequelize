@@ -8,8 +8,6 @@ import tasksRoutes from "./routes/tasks.routes.js";
 // middleware
 app.use(express.json())
 
-
-
 app.use(projectsRoutes)
 app.use(tasksRoutes)
 

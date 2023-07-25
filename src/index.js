@@ -5,6 +5,7 @@ import { sequelize } from "./database/database.js"
 //import "./models/Task.js"
 
 
+
 async function main(){
   try {
     await sequelize.sync({force: false}) 
@@ -15,6 +16,7 @@ async function main(){
     console.error('Unable to connect to the database:', error);
   }
 }
+
 
 main()
 
